@@ -15,10 +15,10 @@ def pytest_addoption(parser): #3.6 step 6 передача параметров 
 @pytest.fixture(scope="function") #
 def browser(request):
 
-    user_language = request.config.getoption("user_language") #3.6 step 9 Запуск автотестов для разных языков интерфейса
+    #user_language = request.config.getoption("user_language") #3.6 step 9 Запуск автотестов для разных языков интерфейса
     browser_name = request.config.getoption("browser_name")  # 3.6 step 6
 
-    options.add_experimental_option('prefs', {'intl.accept_languages': user_language}) #3.6 step 9 Запуск автотестов для разных языков интерфейса
+    #options.add_experimental_option('prefs', {'intl.accept_languages': user_language}) #3.6 step 9 Запуск автотестов для разных языков интерфейса
 
     browser = None
     if browser_name == "chrome":
