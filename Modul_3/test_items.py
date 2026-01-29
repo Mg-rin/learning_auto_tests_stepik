@@ -2,7 +2,7 @@ import pytest, time, math
 from selenium.webdriver.common.by import By
 from selenium.common.exceptions import NoSuchElementException
 
-def test_guest_should_see_login_link(browser, pytestconfig):
+def test_find_button_add_basket_diff_lang(browser, pytestconfig):
 
     link = "http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/"
     browser.get(link)
